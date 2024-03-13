@@ -1,9 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "CPPFunctionLibrary.h"
+#include "PortalsFunctionLibrary.h"
 
-bool UCPPFunctionLibrary::IsInFrustum(AActor* Actor, const UObject* WorldContextObject)
+bool UPortalsFunctionLibrary::IsInFrustum(AActor* Actor, const UObject* WorldContextObject)
 {
 	ULocalPlayer* LocalPlayer = WorldContextObject->GetWorld()->GetFirstLocalPlayerFromController();
 	if (LocalPlayer != nullptr && LocalPlayer->ViewportClient != nullptr && LocalPlayer->ViewportClient->Viewport)
@@ -26,7 +26,7 @@ bool UCPPFunctionLibrary::IsInFrustum(AActor* Actor, const UObject* WorldContext
 
 	return false;
 }
-bool UCPPFunctionLibrary::IsInFrustumComp(USceneComponent* Component, const UObject* WorldContextObject)
+bool UPortalsFunctionLibrary::IsInFrustumComp(USceneComponent* Component, const UObject* WorldContextObject)
 {
 	ULocalPlayer* LocalPlayer = WorldContextObject->GetWorld()->GetFirstLocalPlayerFromController();
 	if (LocalPlayer != nullptr && LocalPlayer->ViewportClient != nullptr && LocalPlayer->ViewportClient->Viewport)

@@ -4,13 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "CPPFunctionLibrary.generated.h"
+#include "PortalsFunctionLibrary.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class PORTALGAME_API UCPPFunctionLibrary : public UBlueprintFunctionLibrary
+class PORTALGAME_API UPortalsFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:
