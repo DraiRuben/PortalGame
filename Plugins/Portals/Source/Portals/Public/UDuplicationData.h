@@ -23,4 +23,7 @@ public:
 	UDuplicationData(AActor* Portal, AActor* Object);
 	UFUNCTION(BlueprintPure,BlueprintCallable)
 	static UDuplicationData* MakeDuplicationData(AActor* newPortal, AActor* newObject);
+
+	UFUNCTION(BlueprintCallable)
+	void Destroy();
 };

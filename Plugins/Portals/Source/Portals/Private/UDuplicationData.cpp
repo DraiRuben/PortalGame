@@ -24,3 +24,8 @@ UDuplicationData* UDuplicationData::MakeDuplicationData(AActor* newPortal, AActo
 	Data->Object = newObject;
 	return Data;
 }
+
+void UDuplicationData::Destroy()
+{
+	this->ConditionalBeginDestroy();
+}
