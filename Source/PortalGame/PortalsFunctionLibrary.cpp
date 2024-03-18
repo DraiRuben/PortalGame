@@ -49,3 +49,5 @@ bool UPortalsFunctionLibrary::IsInFrustumComp(USceneComponent* Component, const 
 
 	return false;
 }
+
+
