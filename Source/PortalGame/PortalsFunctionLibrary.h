@@ -18,7 +18,8 @@ public:
 	static bool IsInFrustum(AActor* Actor, const UObject* WorldContextObject);
 	UFUNCTION(BlueprintPure, meta = (WorldContext = "WorldContextObject"))
 	static bool IsInFrustumComp(USceneComponent* Component, const UObject* WorldContextObject);
-
+	UFUNCTION(BlueprintPure)
+	static float GetRuntimeFloatCurveValue(const FRuntimeFloatCurve& InCurve, float InTime);
 	
 	
 };
