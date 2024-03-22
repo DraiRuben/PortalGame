@@ -50,4 +50,9 @@ bool UPortalsFunctionLibrary::IsInFrustumComp(USceneComponent* Component, const 
 	return false;
 }
 
+float UPortalsFunctionLibrary::GetRuntimeFloatCurveValue(const FRuntimeFloatCurve& InCurve, float InTime)
+{
+	return InCurve.GetRichCurveConst()->Eval(InTime);
+}
+
 
